@@ -1,14 +1,37 @@
-#container {
-    display: flex;
-    width: 992px;
-    height: 992px;
-    flex-wrap: wrap;
-    border: 1px solid black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.grid {
-    height: 60px;
-    width: 60px;
-    border: 1px solid black;
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+body {
+    background-color: red;
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2%;
+}
+
+#container {
+    display: grid;
+    height: 70%;
+    width: 70%;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 5px;
     background-color: white;
+}
+
+
+#new-grid {
+    display: block;
+    margin: 10px auto;
 }
